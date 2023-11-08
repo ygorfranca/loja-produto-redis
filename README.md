@@ -10,3 +10,7 @@ Esse estudo visa explorar configurações de cache para aplicações em Spring B
 
 ### Referencias
 - [https://www.youtube.com/watch?v=YcI9b-lgi7w]()
+
+### Docker
+- Inicilizar redis no docker
+  - docker run --name loja-redis -p 6379:6379 -d redis
