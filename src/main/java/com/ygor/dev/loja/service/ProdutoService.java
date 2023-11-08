@@ -4,8 +4,6 @@ import com.ygor.dev.loja.domain.Produto;
 import com.ygor.dev.loja.dto.ProdutoDTO;
 import com.ygor.dev.loja.repository.ProdutoRepository;
 import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.commons.beanutils.PropertyUtilsBean;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;

@@ -3,7 +3,6 @@ package com.ygor.dev.loja.domain;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Data
