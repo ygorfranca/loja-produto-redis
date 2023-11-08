@@ -4,6 +4,7 @@ import com.ygor.dev.loja.domain.Produto;
 import com.ygor.dev.loja.dto.ProdutoDTO;
 import com.ygor.dev.loja.repository.ProdutoRepository;
 import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;
@@ -18,7 +19,7 @@ public class ProdutoService {
         this.repository = repository;
     }
 
-
+    @Cacheable(value = "produtos")
     public Produto buscarProduto(Long id){
         System.out.println("Buscando Produto");
         return  repository.findById(id).orElseThrow(() -> new IllegalArgumentException("Codigo não encontrado"));
